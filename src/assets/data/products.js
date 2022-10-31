@@ -4,7 +4,7 @@ const Products = [
     title: "Chuck 70",
     gender: "women",
     category: "sneakers",
-    img: "../images/mujer/calzado/img1.jpg",
+    img: require("../images/mujer/calzado/img1.jpg"),
     desc: "Las Chuck 70 combinan los mejores detalles de las Chuck de los 70 con una confección artesanal impecable y materiales premium.",
   },
   {
@@ -12,7 +12,7 @@ const Products = [
     title: "Peanuts Chuck Taylor All Star",
     gender: "women",
     categoy: "sneakers",
-    img: "../images/mujer/calzado/img2.jpg",
+    img: require("../images/mujer/calzado/img2.jpg"),
     desc: "Converse se une a la icónica tira cómica para traer un poco de positividad alegre al mundo. ",
   },
   {
@@ -20,7 +20,7 @@ const Products = [
     title: "Run Star Hike",
     gender: "women",
     category: "sneakers",
-    img: "../images/mujer/calzado/img3.jpg",
+    img: require("../images/mujer/calzado/img3.jpg"),
     desc: "La plataforma voluminosa y la suela de goma dentada dan un toque inesperado a tus Chuck de todos los días. ",
   },
   {
@@ -28,7 +28,7 @@ const Products = [
     title: "Weapon CX NBA",
     gender: "women",
     category: "sneakers",
-    img: "../images/mujer/calzado/img4.jpg",
+    img: require("../images/mujer/calzado/img4.jpg"),
     desc: "Esta leyenda del baskeball lanzada en 1986 se reinventa para homenajear al mejor partido de la historia. ",
   },
   {
@@ -36,7 +36,7 @@ const Products = [
     title: "Mochila Straight",
     gender: "women",
     category: "accessories",
-    img: "../images/mujer/accesorios/img1.jpg",
+    img: require("../images/mujer/accesorios/img1.jpg"),
     desc: "Mochila con compartimento interno para laptop. Bolsillos laterales para botellas. Tres bolsillos delanteros. ",
   },
   {
@@ -44,7 +44,7 @@ const Products = [
     title: "Bandolera Comms Pouch 2.0",
     gender: "women",
     category: "accessories",
-    img: "../images/mujer/accesorios/img2.jpg",
+    img: require("../images/mujer/accesorios/img2.jpg"),
     desc: "Bandolera pequeña de ripstop. Panel trasero transparente para smartphone. Bolsillo principal con cierre. Cordones para ajuste personalizado.",
   },
   {
@@ -52,7 +52,7 @@ const Products = [
     title: "Mochila Go 2",
     gender: "women",
     category: "accessories",
-    img: "../images/mujer/accesorios/img3.jpg",
+    img: require("../images/mujer/accesorios/img3.jpg"),
     desc: "Mochila con compartimento interno para laptop. Bolsillos laterales para botellas. Dos bolsillos delanteros con cierre.",
   },
   {
@@ -60,7 +60,7 @@ const Products = [
     title: "Bandolera Comms Pouch 2.0 Print Archive Leopard",
     gender: "women",
     category: "accessories",
-    img: "../images/mujer/accesorios/img4.jpg",
+    img: require("../images/mujer/accesorios/img4.jpg"),
     desc: "Bandolera pequeña de ripstop. Panel trasero transparente para smartphone. Bolsillo principal con cierre. Cordones para ajuste personalizado.",
   },
   {
@@ -68,7 +68,7 @@ const Products = [
     title: "Remera Snake",
     gender: "women",
     category: "sportswear",
-    img: "../images/mujer/indumentaria/img1.jpg",
+    img: require("../images/mujer/indumentaria/img1.jpg"),
     desc: "Remera escote redondo. Manga corta. Estampa en el frente.",
   },
   {
@@ -76,7 +76,7 @@ const Products = [
     title: "Top Fit",
     gender: "women",
     category: "sportswear",
-    img: "../images/mujer/indumentaria/img2.jpg",
+    img: require("../images/mujer/indumentaria/img2.jpg"),
     desc: "Top escote redondo. Elastico a tono en parte inferior. Logo estampado en pecho y en espalda.",
   },
   {
@@ -84,7 +84,7 @@ const Products = [
     title: "Remera Metals Star Chevron",
     gender: "women",
     category: "sportswear",
-    img: "../images/mujer/indumentaria/img3.jpg",
+    img: require("../images/mujer/indumentaria/img3.jpg"),
     desc: "Remera escote redondo. Manga corta. Estampa metalizada en frente.",
   },
   {
@@ -92,7 +92,7 @@ const Products = [
     title: "Remera All Star",
     gender: "women",
     category: "sportswear",
-    img: "../images/mujer/indumentaria/img4.jpg",
+    img: require("../images/mujer/indumentaria/img4.jpg"),
     desc: "Remera classic fit. Manga corta. Estampa en el frente.",
   },
   {
@@ -100,7 +100,7 @@ const Products = [
     title: "Chuck 70",
     gender: "men",
     category: "sneakers",
-    img: "../images/hombre/calzado/img1.jpg",
+    img: require("../images/hombre/calzado/img1.jpg"),
     desc: "Las Chuck 70 combinan los mejores detalles de las Chuck de los 70 con una confección artesanal impecable y materiales premium.",
   },
   {
@@ -108,7 +108,7 @@ const Products = [
     title: "Jack Purcell",
     gender: "men",
     category: "sneakers",
-    img: "../images/hombre/calzado/img2.jpg",
+    img: require("../images/hombre/calzado/img2.jpg"),
     desc: "Un estilo a tu manera y modernos detalles se unen en estas zapatillas Converse Jack Purcell Vantage Crush.",
   },
   {
@@ -116,7 +116,7 @@ const Products = [
     title: "Rebound",
     gender: "men",
     category: "sneakers",
-    img: "../images/hombre/calzado/img3.jpg",
+    img: require("../images/hombre/calzado/img3.jpg"),
     desc: "Inspiradas en los modelos Converse de los años 80´s, Converse Rebound resignifica a las zapatillas de básquet más icónicas de la década dorada.",
   },
   {
@@ -124,7 +124,7 @@ const Products = [
     title: "Rival mid",
     gender: "men",
     category: "sneakers",
-    img: "../images/hombre/calzado/img4.jpg",
+    img: require("../images/hombre/calzado/img4.jpg"),
     desc: "Inspiradas en los modelos originales de basketball: Fastbreak y Pro Mesh, las zapatillas Converse Rival cuentan con el estilo urbano de siempre pero con un giro vanguardista.",
   },
   {
@@ -132,7 +132,7 @@ const Products = [
     title: "Mochila Speed 2",
     gender: "men",
     category: "accessories",
-    img: "../images/hombre/accesorios/img2.jpg",
+    img: require("../images/hombre/accesorios/img2.jpg"),
     desc: "Mochila con estampa logo. Bolsillo delantero con cierre. Bolsillo para botella lateral. Liviana.",
   },
   {
@@ -140,7 +140,7 @@ const Products = [
     title: "Riñonera Sling Pack Black",
     gender: "men",
     category: "accessories",
-    img: "../images/hombre/accesorios/img3.jpg",
+    img: require("../images/hombre/accesorios/img3.jpg"),
     desc: "Bandolera pequeña de poliester 100% reciclado. Bolsillo con cierre. Funda interna para organización. Ajuste con hebilla.",
   },
   {
@@ -148,7 +148,7 @@ const Products = [
     title: "Gorra Chuck Patch Baseball Hps",
     gender: "men",
     category: "accessories",
-    img: "../images/hombre/accesorios/img4.jpg",
+    img: require("../images/hombre/accesorios/img4.jpg"),
     desc: "Cap clasico six panel con patch. Visera pre curvada.",
   },
   {
@@ -156,7 +156,7 @@ const Products = [
     title: "Gorro Novelty",
     gender: "men",
     category: "accessories",
-    img: "../images/hombre/accesorios/img1.jpg",
+    img: require("../images/hombre/accesorios/img1.jpg"),
     desc: "Sombrero de pescador. Ala ancha para protegerse del sol. Aspecto clásico y plano.",
   },
   {
@@ -164,7 +164,7 @@ const Products = [
     title: "Remera Cons Face",
     gender: "men",
     category: "sportswear",
-    img: "../images/hombre/indumentaria/img1.jpg",
+    img: require("../images/hombre/indumentaria/img1.jpg"),
     desc: "Remera classic fit. Manga corta. Bolsillo aplicado en frente con estampa.",
   },
   {
@@ -172,7 +172,7 @@ const Products = [
     title: "Remera Chuck",
     gender: "men",
     category: "sportswear",
-    img: "../images/hombre/indumentaria/img2.jpg",
+    img: require("../images/hombre/indumentaria/img2.jpg"),
     desc: "Remera classic fit. Manga corta. Con estampa en frente.",
   },
   {
@@ -180,7 +180,7 @@ const Products = [
     title: "Buzo Star Chevron",
     gender: "men",
     category: "sportswear",
-    img: "../images/hombre/indumentaria/img3.jpg",
+    img: require("../images/hombre/indumentaria/img3.jpg"),
     desc: "Buzo con capucha y bolsillo canguro. Estampa en frente y espalda.",
   },
   {
@@ -188,7 +188,7 @@ const Products = [
     title: "Remera Cons Stain",
     gender: "men",
     category: "sportswear",
-    img: "../images/hombre/indumentaria/img4.jpg",
+    img: require("../images/hombre/indumentaria/img4.jpg"),
     desc: "Remera classic fit. Manga corta. Tela base sublimada. Logo estampado en frente.",
   },
   {
@@ -196,7 +196,7 @@ const Products = [
     title: "Chuck Taylor All Star Platform",
     gender: "kids",
     category: "sneakers",
-    img: "../images/niño/calzado/img1.jpg",
+    img: require("../images/niño/calzado/img1.jpg"),
     desc: "Diseñadas para los chicos con un gran estilo, estas Chuck con plataforma son imprescindibles. Los tonos pasteles combinan con todo lo que tengan en su armario.",
   },
   {
@@ -204,7 +204,7 @@ const Products = [
     title: "Chuck Taylor All Star 2V",
     gender: "kids",
     category: "sneakers",
-    img: "../images/niño/calzado/img2.jpg",
+    img: require("../images/niño/calzado/img2.jpg"),
     desc: "Es difícil negar que los niños se ven realmente lindos con las zapatillas Chuck Taylor All Star.",
   },
   {
@@ -212,7 +212,7 @@ const Products = [
     title: "Chuck Taylor All Star",
     gender: "kids",
     category: "sneakers",
-    img: "../images/niño/calzado/img3.jpg",
+    img: require("../images/niño/calzado/img3.jpg"),
     desc: "Es difícil negar que los niños se ven realmente lindos con las zapatillas Chuck Taylor All Star.",
   },
   {
@@ -220,7 +220,7 @@ const Products = [
     title: "Chuck Taylor All Star",
     gender: "kids",
     category: "sneakers",
-    img: "../images/niño/calzado/img4.jpg",
+    img: require("../images/niño/calzado/img4.jpg"),
     desc: "Para un estilo en el que puedas confiar, las zapatillas Chuck Taylor All Star son un elemento básico de la moda. Las icónicas siluetas de caña alta y baja se mantienen fieles al legado.",
   },
   {
@@ -228,7 +228,7 @@ const Products = [
     title: "Short All Star",
     gender: "kids",
     category: "sportswear",
-    img: "./img1.jpg",
+    img: require("../images/niño/indumentaria/img1.jpg"),
     desc: "Bermuda con cintura elastizada. Cordon interno para ajustar. Bolsillos en frente y espalda. Logo estampado en lateral.",
   },
   {
@@ -236,7 +236,7 @@ const Products = [
     title: "Musculosa All Star",
     gender: "kids",
     category: "sportswear",
-    img: "../images/niño/indumentaria/img2.jpg",
+    img: require("../images/niño/indumentaria/img2.jpg"),
     desc: "Remera sin mangas. Logo estampado en frente. Cuello de ribb.",
   },
   {
@@ -244,7 +244,7 @@ const Products = [
     title: "Campera Hoodie Nova",
     gender: "kids",
     category: "sportswear",
-    img: "../images/niño/indumentaria/img3.jpg",
+    img: require("../images/niño/indumentaria/img3.jpg"),
     desc: "Campera con acceso por cierre diente de perro a tono. Capucha con cordón para ajustar. Bolsillos delanteros. Cintura y puños de ribb. Logo estampado en frente.",
   },
   {
@@ -252,9 +252,9 @@ const Products = [
     title: "Remera Mini Patch",
     gender: "kids",
     category: "sportswear",
-    img: "../images/niño/indumentaria/img4.jpg",
+    img: require("../images/niño/indumentaria/img4.jpg"),
     desc: "Remera classic fit. Manga corta. Logo estampado en frente.",
-  },
+  }
 ];
 
 export const getProducts = () => {
