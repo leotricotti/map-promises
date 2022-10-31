@@ -1,17 +1,8 @@
-import productList from './ItemListContainer';
+import { Item } from "./Item";
 
-export const ItemList = () => {
-  return (
-    <div>
-      {productList.map((item) => {
-        return (
-          <div key={item.id}>
-            <img src={item.img} alt={item.title} />
-            <p className={styles.text}>{item.title}</p>
-            <img src={img} alt={item.title} />
-          </div>
-          );
-      })}
-    </div>
-  );
-}
+export const ItemList = ({ productsList }) => {
+  return productsList.map((product) => {
+    <Item product={product} />;
+  });
+};
+
