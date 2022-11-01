@@ -1,4 +1,5 @@
-import styles from './item.module.css'
+import styles from './'
+
 
 export const Item = ({ product }) => {
   return (
