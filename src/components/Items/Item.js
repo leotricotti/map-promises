@@ -1,3 +1,5 @@
+import styles from './item.module.css'
+
 export const Item = ({ product }) => {
   return (
     <div key={product.id} className="card">
