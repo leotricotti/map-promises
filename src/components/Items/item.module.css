@@ -1,0 +1,10 @@
+.card {
+  padding-bottom: 2rem;
+}
+
+.title {
+  color: #000;
+  font-size: .89rem;
+  font-weight: 400;
+  padding-top: .5rem;
+}
