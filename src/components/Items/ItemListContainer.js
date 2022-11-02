@@ -8,7 +8,7 @@ export const Card = () => {
 
   useEffect(() => {
     getProducts().then((res) => setProductList(res));
-  }, [page]);
+  }, []);
 
   return (
     <div className={styles.gridContainer}>

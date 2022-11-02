@@ -8,3 +8,33 @@
   font-weight: 400;
   padding-top: .5rem;
 }
+
+.cardImg {
+  position: relative;
+} 
+
+.cardImg:hover .cardBtn {
+  visibility: visible;
+}
+
+.cardBtn {
+  color: #000;
+  font-size: .9375rem;
+  font-weight: 700;
+  background: #fff;
+  border: 1px solid #000;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  padding: .75rem 1.75rem;
+  transition: all .1s ease-in-out;
+  visibility: hidden;
+}
+
+.cardBtn:hover {
+  color: #fff;
+  background: #000;
+  transform: scale(.95);
+}
+
+
