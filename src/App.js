@@ -1,12 +1,12 @@
 import { NavBar } from "./components/NavBar/NavBar";
 import { Card } from "./components/Items/ItemListContainer";
-import { Filter } from "./components/Filter/Filter";
+import { FilterMobile } from "./components/Filter/FilterMobile";
 
 export const App = () => {
   return (
     <>
       <NavBar />
-      <Filter />
+      <FilterMobile />
       <Card />
     </>
   );
