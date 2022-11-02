@@ -58,3 +58,10 @@ body {
   font-weight: 300;
   background-color: var(--clr-white);
 }
+
+@media (min-width: 1200px) {
+  body, header {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}
