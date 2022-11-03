@@ -3,8 +3,10 @@ import { MenuItems } from "./MenuItems";
 import styles from "./NavBar.module.css";
 import { CartWidget } from "../Widgets/CartWidget";
 import { NavToggle } from "../Widgets/NavToggle";
+import { useState } from "react";
 
 export function NavBar() {
+
   return (
     <header className={styles.headerContainer}>
       <div className={styles.navToggle}>
@@ -20,7 +22,7 @@ export function NavBar() {
           <ul className={styles.navItem}>
             {MenuItems.map((item) => {
               return (
-                <li key={item.title}>
+                <li key={item.title} className={styles.navList}>
                   <a href={item.url} className={styles.navLink}>
                     {item.title}
                   </a>
