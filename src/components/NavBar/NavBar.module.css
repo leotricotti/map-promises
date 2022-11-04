@@ -120,6 +120,10 @@
     padding-right: 1rem;
   }
 
+  .cart > p {
+    display: block;
+  }
+
   .formContainer {
     width: 1.1rem;
     height: 4rem;

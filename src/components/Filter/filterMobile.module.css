@@ -1,29 +1,36 @@
 .bannerImg {
   padding: 4rem .5rem 0 .5rem;  
-
 }
 
-.filterBtn {
-  width: 42%;
+.filtersConatiner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.filterBtn, .orderBtn {
+  width: 92%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: .5rem .5rem .5rem 1rem;
-  margin: .2rem 0;
+  padding: 1rem .5rem 1rem 1rem;
+  margin: .2rem 0 0 1rem;
   border: 1px solid #e5e5e5;
 }
 
-.filterBtn > span {
+.orderBtn {
+  width: fit-content;
+  margin-left: 0;
+}
+
+.filterBtn > span, .orderBtn > span {
+  font-size: .95rem;
   font-weight: 600;
 }
 
 .plusSign {
   color: #343a40;
   font-size: .9rem;
-}
-
-.minusSign{
-  display: none;
 }
 
 .subMenu {
@@ -94,4 +101,8 @@ input {
 
 .subMenuText input:checked+span:after {
   opacity: 1;
+}
+
+@media (min-width: 750px) {
+  
 }

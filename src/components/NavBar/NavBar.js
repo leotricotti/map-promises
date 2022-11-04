@@ -1,9 +1,10 @@
+import { useState, useEffect } from "react";
 import logo from "../../assets/images/logo/converse.webp";
 import { MenuItems } from "./MenuItems";
 import styles from "./NavBar.module.css";
 import { CartWidget } from "../Widgets/CartWidget";
 import { NavToggle } from "../Widgets/NavToggle";
-import { useState, useEffect } from "react";
+
 
 export function NavBar() {
   const [toggle, setToggle] = useState();
@@ -13,7 +14,7 @@ export function NavBar() {
     function handleResize() {
       if (window.innerWidth > 992) {
         setToggle(true);
-      }
+      } 
     }
     handleResize();
 
