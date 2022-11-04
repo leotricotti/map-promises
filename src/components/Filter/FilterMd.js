@@ -7,7 +7,7 @@ export const FilterMd = () => {
  
   return (
     <>
-      <ul>
+      <ul className={styles.mapFilterMenu}>
         {MenuFilter.map((filter) => {
           return (
             <div key={filter.id}>
@@ -18,19 +18,19 @@ export const FilterMd = () => {
                 </div>
               </div>
               <form action="">
-                <li className={styles.subMenuItem}>
+                <li className={styles.subMenuItemUno}>
                   <label className={styles.subMenuLabel}>
                     <input type="radio" name="item" />
                     <span className={styles.subMenuText}>{filter.item1}</span>
                   </label>
                 </li>
-                <li className={styles.subMenuItem}>
+                <li className={styles.subMenuItemDos}>
                   <label className={styles.subMenuLabel}>
                     <input type="radio" name="item" />
                     <span className={styles.subMenuText}>{filter.item2}</span>
                   </label>
                 </li>
-                <li className={styles.subMenuItem}>
+                <li className={styles.subMenuItemTres}>
                   <label className={styles.subMenuLabel}>
                     <input type="radio" name="item" />
                     <span className={styles.subMenuText}>{filter.item3}</span>
