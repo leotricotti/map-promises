@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import img from "../../assets/images/mujer/calzado/banner/0047b494219b8af236da089e2c86.jpg";
-import styles from "./filterMobile.module.css";
+import styles from "./filter.module.css";
 import { PlusSign } from "../Widgets/PlusSign";
-import { MenuFilter } from "./MenuFilter";
-import { Order } from "./Order";
+import { FilterMd } from "./FilterMd";
 
 export const Filter = () => {
   const [toggleFilter, setToggleFilter] = useState(false);
@@ -22,47 +21,13 @@ export const Filter = () => {
             </div>
           </div>
           {toggleFilter && (
-            <ul>
-              {MenuFilter.map((filter) => {
-                return (
-                  <div key={filter.id}>
-                    <div className={styles.subMenu}>
-                      <h3 className={styles.title}>{filter.gender}</h3>
-                      <div className={styles.filterPlus}>
-                        <PlusSign />
-                      </div>
-                    </div>
-                    <form action="">
-                      <li className={styles.subMenuItem}>
-                        <label className={styles.subMenuLabel}>
-                          <input type="radio" name="item" />
-                          <span className={styles.subMenuText}>
-                            {filter.item1}
-                          </span>
-                        </label>
-                      </li>
-                      <li className={styles.subMenuItem}>
-                        <label className={styles.subMenuLabel}>
-                          <input type="radio" name="item" />
-                          <span className={styles.subMenuText}>
-                            {filter.item2}
-                          </span>
-                        </label>
-                      </li>
-                      <li className={styles.subMenuItem}>
-                        <label className={styles.subMenuLabel}>
-                          <input type="radio" name="item" />
-                          <span className={styles.subMenuText}>
-                            {filter.item3}
-                          </span>
-                        </label>
-                      </li>
-                    </form>
-                  </div>
-                );
-              })}
-            </ul>
+            <div className={styles.filterToggle}>
+              <FilterMd />
+            </div>
           )}
+          <div className={styles.filterMd}>
+            <FilterMd />
+          </div>
         </ul>
       </div>
     </>

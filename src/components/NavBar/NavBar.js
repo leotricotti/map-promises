@@ -1,25 +1,14 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import logo from "../../assets/images/logo/converse.webp";
 import { MenuItems } from "./MenuItems";
 import styles from "./NavBar.module.css";
 import { CartWidget } from "../Widgets/CartWidget";
 import { NavToggle } from "../Widgets/NavToggle";
+import { NavBarDesktop } from "./NavBarDesktop";
 
 
 export function NavBar() {
-  const [toggle, setToggle] = useState();
-
-  //Funcion que maneja el estado de acuerdo al tamaño de pantalla
-  useEffect(() => {
-    function handleResize() {
-      if (window.innerWidth > 992) {
-        setToggle(true);
-      } 
-    }
-    handleResize();
-
-    window.addEventListener("resize", handleResize);
-  });
+  const [toggle, setToggle] = useState(false);
 
   return (
     <header className={styles.headerContainer}>
@@ -47,6 +36,9 @@ export function NavBar() {
             </ul>
           </nav>
         )}
+      </div>
+      <div className={styles.navDesktop}>
+        <NavBarDesktop />
       </div>
       <div className={styles.cart}>
         <p>Cart</p>
