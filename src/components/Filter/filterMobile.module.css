@@ -1,5 +1,6 @@
 .bannerImg {
-  padding-top: 4rem;  
+  padding: 4rem .5rem 0 .5rem;  
+
 }
 
 .filterBtn {
@@ -8,7 +9,7 @@
   justify-content: space-between;
   align-items: center;
   padding: .5rem .5rem .5rem 1rem;
-  margin: .2rem 1rem;
+  margin: .2rem 0;
   border: 1px solid #e5e5e5;
 }
 
@@ -23,4 +24,74 @@
 
 .minusSign{
   display: none;
+}
+
+.subMenu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(0, 0, 0, .125);
+  border-bottom: 1px solid rgba(0, 0, 0, .125);
+  margin: 0 auto;
+}
+
+.title {
+  color: #000;
+  font-size: .9rem;
+  text-transform: capitalize;
+  padding: 1rem 0;
+}
+
+.filterMinus {
+  display: none;
+}
+
+.filterPlus {
+  padding-right: 1rem;
+}
+
+.subMenuItem {
+ padding: .5rem 0;
+}
+
+.subMenuLabel {
+  display: flex;
+  align-items: center;
+}
+
+.subMenuText {
+  font-size: .75rem;
+  text-transform: uppercase;
+  padding-left: 1rem;
+}
+
+input {
+  display: none;
+}
+
+.subMenuText:before {
+  content: "";
+  border: 1px solid rgba(0, 0, 0, .125);
+  width: .75rem;
+  height: .75rem;
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
+
+.subMenuText::after {
+  background: #000;
+  width: .75rem;
+  height: .75rem;
+  position: absolute;
+  top: 2px;
+  left: 4px;
+  transition: 300ms;
+  opacity: 1;
+}
+
+.subMenuText input:checked+span:after {
+  opacity: 1;
 }

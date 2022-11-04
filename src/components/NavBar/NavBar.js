@@ -6,15 +6,13 @@ import { NavToggle } from "../Widgets/NavToggle";
 import { useState, useEffect } from "react";
 
 export function NavBar() {
-  const [toggle, setToggle] = useState(false);
+  const [toggle, setToggle] = useState();
 
   //Funcion que maneja el estado de acuerdo al tamaño de pantalla
   useEffect(() => {
     function handleResize() {
       if (window.innerWidth > 992) {
         setToggle(true);
-      } else {
-        setToggle(false);
       }
     }
     handleResize();
