@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { getProducts } from "../../assets/data/products";
 import { ItemList } from "./ItemList";
 import styles from "./itemListContainer.module.css";
+import { Filter } from "../Filter/Filters";
 
 export const Card = () => {
   const [productsList, setProductList] = useState([]);
@@ -11,8 +12,11 @@ export const Card = () => {
   }, []);
 
   return (
-    <div className={styles.gridContainer}>
-      <ItemList productsList={productsList} />
-    </div>
+    <>
+      <Filter />
+      <div className={styles.gridContainer}>
+        <ItemList productsList={productsList} />
+      </div>
+    </>
   );
 };
