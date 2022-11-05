@@ -7,6 +7,7 @@
 }
 
 .filterBtn {
+  width: 45%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,7 +16,7 @@
   border: 1px solid #e5e5e5;
 }
 
-.filterBtn>span {
+.filterBtn > span {
   font-size: .95rem;
   font-weight: 600;
 }
@@ -48,17 +49,15 @@
 }
 
 .filterPlus {
+  color:  #343a40;
   padding-right: 1rem;
+  
 }
 
 .subMenuItemUno,
 .subMenuItemDos,
 .subMenuItemTres {
   padding: .5rem 0;
-}
-
-.mapFilterMenu:last-child > .subMenuItemTres {
-  display: none;
 }
 
 .subMenuLabel {
@@ -95,11 +94,6 @@ input {
   top: 2px;
   left: 4px;
   transition: 300ms;
-  opacity: 1;
-}
-
-.subMenuText input:checked+span:after {
-  opacity: 1;
 }
 
 @media (min-width: 750px) {
