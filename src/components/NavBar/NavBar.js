@@ -4,7 +4,7 @@ import { MenuItems } from "./MenuItems";
 import styles from "./NavBar.module.css";
 import { CartWidget } from "../Widgets/CartWidget";
 import { NavToggle } from "../Widgets/NavToggle";
-import { NavBarDesktop } from "./NavBarDesktop";
+import { NavBarDesktop } from "./NavBarMenu";
 
 
 export function NavBar() {
@@ -22,19 +22,9 @@ export function NavBar() {
           </a>
         </div>
         {toggle && (
-          <nav className={styles.navContainer}>
-            <ul className={styles.navItem}>
-              {MenuItems.map((item) => {
-                return (
-                  <li key={item.title} className={styles.navList}>
-                    <a href={item.url} className={styles.navLink}>
-                      {item.title}
-                    </a>
-                  </li>
-                );
-              })}
-            </ul>
-          </nav>
+          <div className={styles.navMobile}>
+            <NavBarDesktop />
+          </div>
         )}
       </div>
       <div className={styles.navDesktop}>
