@@ -1,6 +1,5 @@
 import { useState } from "react";
 import logo from "../../assets/images/logo/converse.webp";
-import { MenuItems } from "./MenuItems";
 import styles from "./NavBar.module.css";
 import { CartWidget } from "../Widgets/CartWidget";
 import { NavToggle } from "../Widgets/NavToggle";
